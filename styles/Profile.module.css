@@ -1,13 +1,47 @@
 .container {
   display: flex;
+  padding: 3em 5px;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  width: 455px;
+  height: 275px;
 }
 
-.title {
+.image {
+  padding: 0 10px;
+  margin: 0 20px;
+  width: 30%;
+}
+
+.description {
+  margin: 0 20px;
+}
+
+.name {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight: bold;
+  font-family: iroha-mochi;
 }
 
-.title {
-  text-align: center;
+.sns-contents {
+  padding: 3px 0;
+}
+
+.sns-icon {
+  width: 1.1em;
+  vertical-align: -0.2em;
+  margin-right: 7px;
+}
+
+.twitter-icon {
+  color: #55acee;
+  font-size: 1.1em;
+}
+
+.sns-username {
+  padding: 0 1px;
+  font-weight: bold;
 }
