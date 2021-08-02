@@ -8,8 +8,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export const Profile: React.FC = () => (
   <div className={styles.container}>
 
-    <div className={styles.image}>
-      <Image src={'/images/okoyan_kill_aqua.png'} width={510} height={509}/>
+    <div className={styles['image-container']}>
+      <Image src={'/images/okoyan_kill_aqua.png'} width={510} height={509} className={styles.image} />
     </div>
 
     <div className={styles.description}>
