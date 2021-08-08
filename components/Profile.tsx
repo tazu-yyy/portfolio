@@ -52,23 +52,28 @@ export const Profile: React.FC = () => {
         </div>
       </div>
       <div className={`${styles.container} ${styles['container-back']} ${rotateFlg ? styles.rotate : ''}`}>
-        <h4>Main skills</h4>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>jQuery</li>
-          <li>RDBMS</li>
-          <li>Linux</li>
-          <li>システム運用</li>
-          <li>Dockerなどの主要な開発環境、CI</li>
+        <h4>Main skills ( 業務年 )</h4>
+        <ul className={`${styles['skill-sets']} ${styles['main-skill-sets']}`}>
+          <li>
+            Ruby on Rails
+            <span className={styles['skill-level']}>6</span>
+          </li>
+          <li>jQuery<span className={styles['skill-level']}>6</span></li>
+          <li>システム運用<span className={styles['skill-level']}>5</span></li>
+          <li>Docker<span className={styles['skill-level']}>5</span></li>
+          <li className={styles['level-none']}>RDBMS</li>
+          <li className={styles['level-none']}>Linux</li>
+          <li className={styles['level-none']}>AWS</li>
         </ul>
         <h4>Sub skills</h4>
-        <ul>
+        <ul className={`${styles['skill-sets']} ${styles['sub-skill-sets']}`}>
           <li>Next.js</li>
           <li>React</li>
           <li>Angular</li>
           <li>Apache Cordova</li>
           <li>Ionic</li>
           <li>C</li>
+          <li>TypeScript</li>
         </ul>
       </div>
     </div>
