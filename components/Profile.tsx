@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from "next/image"
 import styles from "../styles/Profile.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -15,7 +14,7 @@ export const Profile: React.FC = () => {
     <div className={styles.containers} onClick={rotateProfile}>
       <div className={`${styles.container} ${styles['container-front']} ${rotateFlg ? styles.rotate : ''}`}>
         <div className={styles['image-container']}>
-          <Image src={'/images/okoyan_kill_aqua.png'} width={510} height={509} className={styles.image} alt={'自画像'}/>
+          <img src={'/images/okoyan_kill_aqua.png'} width={510} height={509} className={styles.image} alt={'自画像'}/>
         </div>
         <div className={styles.description}>
           <div>
