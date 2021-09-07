@@ -1,0 +1,199 @@
+$max-screen: 455px;
+
+.containers {
+  position: relative;
+  width: 455px;
+  height: 275px;
+  max-width: 100%;
+}
+
+.rotate.container-front {
+  transform: rotateY(-180deg)
+}
+
+.rotate.container-back {
+  transform: rotateY(0)
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  backface-visibility: hidden;
+  transition: all .6s ease;
+  max-width: 100%;
+}
+
+/*.containers:hover .container:after {*/
+/*  display: none;*/
+/*}*/
+
+/*.container:after {*/
+/*  z-index: -1;*/
+/*  position: absolute;*/
+/*  content: '';*/
+/*  bottom: 10px;*/
+/*  right: 5px;*/
+/*  width: 50%;*/
+/*  top: 80%;*/
+/*  max-width: 500px;*/
+/*  background: #8d8c8c;*/
+/*  -webkit-box-shadow: 0 15px 10px #8d8c8c;*/
+/*  -moz-box-shadow: 0 15px 10px #8d8c8c;*/
+/*  box-shadow: 0 15px 10px #8d8c8c;*/
+/*  -webkit-transform: rotate(5deg);*/
+/*  -moz-transform: rotate(5deg);*/
+/*  -o-transform: rotate(5deg);*/
+/*  -ms-transform: rotate(5deg);*/
+/*  transform:rotate(5deg);*/
+/*}*/
+
+.container-front {
+  display: flex;
+  padding: 3em 5px;
+}
+
+.container-front:hover .click-btn {
+  opacity: 0.6;
+}
+
+.click-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: all .25s ease;
+}
+
+.image-container {
+  padding: 0 10px;
+  margin: 0 20px;
+  width: 30%;
+}
+
+@media screen and (max-width: $max-screen) {
+  .image-container {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.image {
+  image-rendering: -webkit-optimize-contrast;
+  width: 100%;
+}
+
+.description {
+  margin: 0 20px;
+}
+
+.name {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: iroha-mochi-sub, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.sns-contents {
+  padding: 3px 0;
+}
+
+.sns-icon {
+  width: 1.1em;
+  vertical-align: -0.2em;
+  margin-right: 7px;
+}
+
+.twitter-icon {
+  color: #55acee;
+  font-size: 1.1em;
+}
+
+.sns-username {
+  padding: 0 1px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: $max-screen) {
+  .sns-username {
+    font-size: 0.9em;
+  }
+}
+
+
+.container-back {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: $max-screen) {
+  .container-back {
+    font-size: 0.85em;
+  }
+}
+
+.container-back h4 {
+  margin: 5px 10px;
+  text-decoration: underline;
+}
+
+.container-back ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.container-back li {
+  margin: 2px 5px;
+  /*text-decoration: underline #3cd9ff 3px;*/
+  text-decoration-thickness: 5px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -1px;
+}
+
+.skill-sets li {
+  display: flex;
+  border-radius: 25px;
+  padding: 0 0 0 10px;
+  align-items: center;
+  margin: 3px 3px;
+}
+
+.main-skill-sets li {
+  border: 1px solid #ff3c3c;
+}
+
+.sub-skill-sets li {
+  border: 1px solid #3cb4ff;
+  padding: 0 10px;
+}
+
+.qualifications li {
+  border: 1px solid #3cb4ff;
+  padding: 0 10px;
+}
+
+.skill-level {
+  margin: 3px 5px;
+  padding: 1px 6px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: small;
+}
+
+.level-none {
+  padding: 0 10px !important;
+}
+
+.main-skill-sets .skill-level {
+  background-color: #ff7777;
+}
+

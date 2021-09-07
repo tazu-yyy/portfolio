@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "iroha-mochi-sub";
+  src: url("/fonts/iroha-mochi-sub.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "yomogi-sub";
+  src: url("/fonts/yomogi-sub.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tegaki-zatsu";
+  src: url("/fonts/tegaki-zatsu-sub.woff2") format("woff2");
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

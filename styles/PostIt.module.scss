@@ -1,0 +1,50 @@
+.fusen-container {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  z-index: 100;
+  font-family: tegaki-zatsu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.fusen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, #ffffcc 0%, #f1f1c1 0.5%, #f1f1c1 13%, #ffffcc 16%);
+  padding: 45px 1em 1em 1em;
+  font-size: 0.9em;
+  margin: 1.6em 0;
+}
+
+.fusen::after {
+  content: "";
+  display: block;
+  position:  absolute;
+  z-index: -100;
+  bottom: 0;
+  right: 0;
+  height: 15px;
+  width: 98%;
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  transform: rotate(2deg);
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 5px;
+  width: 100%;
+  max-width: 100%;
+  height: 85%;
+  max-height: 100%;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  line-height: 1.5em;
+}

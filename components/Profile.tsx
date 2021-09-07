@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from "../styles/Profile.module.css"
+import styles from "../styles/Profile.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -14,7 +14,7 @@ export const Profile: React.FC = () => {
     <div className={styles.containers} onClick={rotateProfile}>
       <div className={`${styles.container} ${styles['container-front']} ${rotateFlg ? styles.rotate : ''}`}>
         <div className={styles['image-container']}>
-          <img src={'/images/okoyan_kill_aqua.png'} width={510} height={509} className={styles.image} alt={'自画像'}/>
+          <img src={'/images/profile_small.png'} className={styles.image} alt={'自画像'}/>
         </div>
         <div className={styles.description}>
           <div>
@@ -73,6 +73,11 @@ export const Profile: React.FC = () => {
           <li>Ionic</li>
           <li>C</li>
           <li>TypeScript</li>
+        </ul>
+        <h4>Qualifications</h4>
+        <ul className={`${styles['skill-sets']} ${styles['qualifications']}`}>
+          <li>IPA ネットワーク, データベース</li>
+          <li>AWS SAA</li>
         </ul>
       </div>
     </div>
