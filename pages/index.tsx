@@ -24,7 +24,7 @@ export default function Home() {
               </Link>
             </div>
             <div className={`${styles["sp-container"]} ${styles["menu-container"]}`}>
-              <span style={{ textDecoration: "line-through"}}>制作物</span><br/>（工事中）
+              <span style={{ textDecoration: "line-through"}}>制作物</span>
               <img src={"/images/sp.png"} className={`${styles["sp-image"]} ${styles["menu-image"]}`} />
             </div>
             <div className={`${styles["book-container"]} ${styles["menu-container"]}`}>

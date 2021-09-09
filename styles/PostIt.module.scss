@@ -48,3 +48,24 @@
   overflow: hidden;
   line-height: 1.5em;
 }
+
+.none {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable-container {
+  position: relative;
+  width: 100%;
+}
+
+.clickable-icon {
+  position: absolute;
+  color: #3c5cff;
+  width: 1.5em;
+  bottom: 0;
+  right: 0;
+}

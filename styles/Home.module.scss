@@ -14,18 +14,69 @@
   padding: 5rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 100%;
   position: relative;
 }
 
+@media screen and (min-width: 750px) {
+  .hobby-container {
+    position: absolute;
+    top: calc(50% - 300px);
+    left: -30px;
+    width: 150px;
+  }
+
+  .sp-container {
+    position: absolute;
+    top: calc(50% - 4em);
+    left: -170px;
+    width: 150px;
+  }
+
+  .book-container {
+    position: absolute;
+    top: calc(50% - 4em);
+    right: -170px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hobby-container {
+    width: 30vw;
+  }
+
+  .sp-container {
+    width: 30vw;
+  }
+
+  .book-container {
+    width: 30vw;
+  }
+}
+
 .hobby-container {
-  position: absolute;
-  top: calc(50% - 300px);
-  left: -30px;
-  width: 150px;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 1.5em;
+}
+
+.sp-container {
+  text-align: center;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 1.5em;
+}
+
+.book-container {
+  text-align: center;
   z-index: 2;
   color: white;
   font-weight: bold;
@@ -38,34 +89,8 @@
   width: 100%;
 }
 
-.sp-container {
-  text-align: center;
-  position: absolute;
-  top: calc(50% - 4em);
-  left: -170px;
-  width: 150px;
-  z-index: 2;
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px 0 #000;
-  font-size: 1.5em;
-}
-
 .sp-image {
   width: 100%;
-}
-
-.book-container {
-  text-align: center;
-  position: absolute;
-  top: calc(50% - 4em);
-  right: -170px;
-  width: 150px;
-  z-index: 2;
-  color: white;
-  font-weight: bold;
-  text-shadow: 1px 1px 0 #000;
-  font-size: 1.5em;
 }
 
 .book-image {
