@@ -57,6 +57,12 @@ $max-screen: 455px;
   transform: rotateY(0)
 }
 
+@media screen and (max-width: $max-screen) {
+  .occupation {
+    text-align: center;
+  }
+}
+
 .container-front {
   display: flex;
   padding: 3em 5px;

@@ -17,7 +17,7 @@ export const Profile: React.FC = () => {
           <img src={'/images/profile_small.png'} className={styles.image} alt={'自画像'}/>
         </div>
         <div className={styles.description}>
-          <div>
+          <div className={styles["occupation"]}>
             フリーランス エンジニア
           </div>
           <div className={styles.name}>
