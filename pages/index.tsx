@@ -24,8 +24,12 @@ export default function Home() {
               </Link>
             </div>
             <div className={`${styles["sp-container"]} ${styles["menu-container"]}`}>
-              <span style={{ textDecoration: "line-through"}}>制作物</span>
-              <img src={"/images/sp.png"} className={`${styles["sp-image"]} ${styles["menu-image"]}`} />
+              <Link href={"/products"}>
+                <a>
+                  制作物
+                  <img src={"/images/sp.png"} className={`${styles["sp-image"]} ${styles["menu-image"]}`} />
+                </a>
+              </Link>
             </div>
             <div className={`${styles["book-container"]} ${styles["menu-container"]}`}>
               <a href={"https://kongaribug.hatenablog.com/"}>
