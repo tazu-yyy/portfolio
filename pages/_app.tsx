@@ -1,12 +1,9 @@
 import '../styles/globals.scss'
-import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <AnimatePresence>
-        <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
+      <Component {...pageProps} />
     </div>
   )
 }
