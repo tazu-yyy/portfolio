@@ -10,7 +10,6 @@ export default function Home() {
         <motion.span
           initial={{ x: "-200%" }}
           animate={{ x: "0" }}
-          exit={{ x: "200%" }}
           transition={{ ease: "easeOut", duration: 0.25 }}
         >
           <CommonHead />

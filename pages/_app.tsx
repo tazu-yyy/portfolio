@@ -7,8 +7,7 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <div>
-      <script> </script>
-      <AnimatePresence exitBeforeEnter onExitComplete={transitionCallback}>
+      <AnimatePresence onExitComplete={transitionCallback}>
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
     </div>

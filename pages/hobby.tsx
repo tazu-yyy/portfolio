@@ -21,7 +21,6 @@ export default function Hobby() {
       <motion.div
         initial={{ x: "-200%" }}
         animate={{ x: "0" }}
-        exit={{ x: "200%" }}
         transition={{ ease: "easeOut", duration: 0.3 }}
       >
         <CommonHead />
