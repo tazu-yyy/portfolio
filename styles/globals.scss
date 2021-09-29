@@ -41,11 +41,15 @@ main {
 }
 
 @keyframes pageFadeIn {
-  from {
+  0% {
     opacity: 0;
   }
 
-  to {
+  33% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
   }
 }
