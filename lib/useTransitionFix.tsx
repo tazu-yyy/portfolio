@@ -25,7 +25,6 @@ export const useTransitionFix = (): Cleanup => {
         // Add duplicated nodes to the DOM.
         document.head.appendChild(copy)
       }
-
       cleanupRef.current = () => {
         for (let copy of copies) {
           // Remove previous page's styles after the transition has finalized.
