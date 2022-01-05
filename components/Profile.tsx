@@ -14,7 +14,7 @@ export const Profile: React.FC = () => {
     <div className={styles.containers} onClick={rotateProfile}>
       <div className={`${styles.container} ${styles['container-front']} ${rotateFlg ? styles.rotate : ''}`}>
         <div className={styles['image-container']}>
-          <img src={'/images/profile_small.png'} className={styles.image} alt={'自画像'}/>
+          <img src={'/images/kmb.png'} className={styles.image} alt={'自画像'}/>
         </div>
         <div className={styles.description}>
           <div className={styles["occupation"]}>
