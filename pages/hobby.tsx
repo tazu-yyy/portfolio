@@ -151,7 +151,7 @@ export default function Hobby() {
           </PostIt>
           <PostIt title={"LoL"}>
             2016年～2018年<br />
-            身内ノーマルをだらだらと。一応キンドレッドとポッピーメイン。アサシンが苦手。期間が長いので対戦数だけは多い。
+            身内ノーマルをだらだらと。一応キンドレッドとポッピーメイン。期間が長いので対戦数だけは多い。
           </PostIt>
           <PostIt title={"ドラゴンボールファイターズ"}>
             2018年～2019年<br />
@@ -263,12 +263,23 @@ export default function Hobby() {
           <PostIt title={"結城友奈"}>
             2014年～<br />
             かわいい<br/>
-            <img src={"/images/yukiyuna.png"} className={styles["postit-image"]} style={{ width: "120px" }} />
+            <a href={"https://twitter.com/anime_yukiyuna"} target={"_blank"} rel="noopener noreferrer">
+              <img src={"/images/yukiyuna.png"} className={styles["postit-image"]} style={{ width: "120px" }} />
+            </a>
+          </PostIt>
+          <PostIt title={"名取さな"}>
+            2020年～<br />
+            かわいい<br/>
+            <a href={"https://twitter.com/sana_natori"} target={"_blank"} rel="noopener noreferrer">
+              <img src={"/images/natorisana.png"} className={styles["postit-image"]} style={{ width: "134px" }} />
+            </a>
           </PostIt>
           <PostIt title={"湊あくあ"}>
             2020年～<br />
             かわいい<br/>
-            <img src={"/images/minatoaqua3.png"} className={styles["postit-image"]} />
+            <a href={"https://twitter.com/minatoaqua"} target={"_blank"} rel="noopener noreferrer">
+              <img src={"/images/minatoaqua3.png"} className={styles["postit-image"]} />
+            </a>
           </PostIt>
           <div style={{ width: "100%" }}></div>
           <div className={styles["fusen-container"]}>
